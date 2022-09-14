@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: "appointment-booking-service"
+  jackson:
+    default-property-inclusion: non_null
+  datasource:
+    url: jdbc:h2:mem:appointment-db
+    username: user
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+  h2:
+    console:
+      enabled: on
